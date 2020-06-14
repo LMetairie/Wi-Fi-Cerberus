@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% load static %}
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">  
+  <body>
+  
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="navbar-brand" href="{% url 'index' %}">
+              <img src="static/cerberus.png" width="35" height="35" alt="logo">
+              CERBERUS
+            </a>
+          </li>
+          
+          <li class="nav-item"><a class="nav-link" href="{% url 'admin:index' %}">Admin</a></li>    
+
+          {# Verifier si le user est logged. #}
+          {% if user.is_authenticated %}
+            <li class="nav-item"><a class="nav-link" href="{% url 'live_search' %}">Live-Search</a></li>    
+          
+            <li class="nav-item"><a class="nav-link" href="{% url 'file_crater:captures_list' %}">Captures</a></li>    
+          
+            <li class="nav-item"><a class="nav-link" href="{% url 'logout' %}">Logout</a></li>
+            
+            <li class="nav-item"><a class="nav-link" >{{ user.username }}</a></li>                      
+
+          {% else %}
+            <li class="nav-item"><a class="nav-link" href="{% url 'user_login' %}">Login</a></li>
+          {% endif %}
+        
+        </ul>
+      </div>
+    </nav>
+  
+    <div class="container">
+  
+    {% block body_block %}
+      <title>Base</title>
+    {% endblock %}
+  
+    </div>
+  
+  </body>
+</html>

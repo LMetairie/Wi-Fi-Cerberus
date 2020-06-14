@@ -1,0 +1,6 @@
+venv/
+wifi_cerberus/wifi_cerberus/__pycache__/
+wifi_cerberus/db.sqlite3
+wifi_cerberus/file_crater/__pycache__/
+wifi_cerberus/file_crater/migrations/__pycache__/
+
