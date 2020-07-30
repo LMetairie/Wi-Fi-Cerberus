@@ -1,18 +1,22 @@
 # Projet CERBERUS
-Mise en place d'un cluster de cartes Raspberry Pi capables de collecter des informations à partir des ondes Wi-Fi.
-Le cluster de Raspberry Pi sera controlé à partir d'un serveur distant Django qui va mettre à disposition les données collectées et des statistiques.
+## Description
+Creation d'une application Web capable de collecter des données à partir d'un cluster de Raspberry Pi(s) deployée dans une area.  
+Les données collectées par les Raspberry(s) seront envoyés vers un serveur en utilisant un appel API REST. Ces données seront ensuite verifiées et sauvegardées pour etres mises à disposition à travers une API.  
+Le serveur utilisera le framework Django qui communiquera avec une base de données PostgreSQL. Les données seront mises à disposition à des client via l'API, dans notre cas une application Web React.
+
  
 ## Django Server
-Serveur Django version 0.2 Login et paneau d'administration ajoutées.
-Pour lancer le serveur:
-	Generer un env. python.
-	- `python -m venv venv`
-	Activer l'env.
-	- `source ./venv/bin/activate`
-	Installer les pacquets.
-	- `pip install -r requirements.txt`
-	Lancer le servuer.
-	- `python manage.py runserver`
+Nous allons utiliser les packages:
+- "django" Framework de developpement web.
+- "django rest framework" pour la creation de l'API.
+- "psycopg2, sqlparse" pour communiquer avec la base de données PostgreSQL.
+- "django-cors-headers" pour authoriser l'utilisation de cors.
+
+## React WebApp
+Nous allons utiliser les packages:
+- "ant Design" librarie de componentes React.
+- "Redux" librarie React pour faciliter la navigation dans l'application.
+- "React leaflet" librarie de componentes de cartes.
 
 ## Network Settings
 Script bash pour activer la conexion Wi-Fi et connecter le device au reseau Fablab.
