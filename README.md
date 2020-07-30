@@ -1,4 +1,6 @@
-# Projet CERBERUS
+# Projet CERBERUS 
+<img src="./web_application/concepts/cerberus.png"  width="220" height="220">
+
 ## Description
 Creation d'une application Web capable de collecter des données à partir d'un cluster de Raspberry Pi(s) deployée dans une area.  
 Les données collectées par les Raspberry(s) seront envoyés vers un serveur en utilisant un appel API REST. Ces données seront ensuite verifiées et sauvegardées pour etres mises à disposition à travers une API.  
