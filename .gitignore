@@ -1,1 +1,2 @@
-./web_application/backend/venv/
+./web_application/backend/venv/*
+./web_application/backend/cerberus_backend/cerberus_backend/__pycache__/*
