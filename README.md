@@ -6,6 +6,7 @@ Création d'une application Web capable de collecter des données à partir d'un
 Les données collectées par les Raspberry(s) seront envoyés vers un serveur en utilisant un appel API REST. Ces données seront ensuite vérifiées et sauvegardées pour être mises à disposition à travers une API.  
 Le serveur utilisera le framework Django qui communiquera avec une base de données PostgreSQL. Les données seront mises à disposition à des client via l'API, dans notre cas une application Web React.
 
+<img src="./web_application/concepts/Cerberus_Architecture.png"  width="420" height="420">
  
 ## Django Server
 Nous allons utiliser les packages:
