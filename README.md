@@ -31,6 +31,21 @@ Script BASH pour activer la connexion Wi-Fi et connecter le device au réseau Fa
 Script Python qui sera intégré en tant que daemon dans les Raspberry Pi.
 Le script collecte les données, les sérialise et les envoie ensuite sur le serveur distant (thingSpeak pour le moment).
 
+## Instructions pour lancer le serveur Django
+Creer un nouveau environnement Python:  
+`cd web_application/backend/`  
+`python3 -m venv venv`  
+Installer les packages necessaires au projet  
+`pip install web_application/backend/requirements.txt`  
+Activer l'environnement virtuel Python  
+`source web_application/backend/venv/bin/activate`  
+Lancer le serveur 
+`python web_application/backend/cerberus_backend/cerberus_backend/manager.py runserver`  
+
+URLS:   
+`127.0.0.1/api/devices/` - Obtenir la liste complte d'appareils.  
+`127.0.0.1/api/devices/1/` - Obtenir les informations sur un apparil en particulier.
+
 ## TODO(s)
 ### React: 
 - Mettre en place la page d’accueil React.
