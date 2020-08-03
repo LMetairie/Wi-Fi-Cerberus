@@ -16,7 +16,9 @@ Nous allons utiliser les packages:
 - "gdal" necessaire pour sauver les coordonnées géographiques dans Django. Erreur lors de la compilation du package (gcc exit code 1). Remplacé par FloatField.
 
 ### Etat actuel
-Mise en place de contrôleurs REST capables d'envoyer la liste entière de adresses sauvegardées mais aussi ajouter/modifier des données.
+Mise en place de contrôleurs REST capables d'envoyer la liste entière de adresses sauvegardées mais aussi ajouter/modifier les données d'une entrée.
+
+Prochaine étape: Mettre en place la page React avec la composante carte pour tester l'affichage de données en utilisant Leaflet. 
 
 ## React WebApp
 Nous allons utiliser les packages:
