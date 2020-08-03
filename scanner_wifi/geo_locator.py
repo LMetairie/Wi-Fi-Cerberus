@@ -1,8 +1,6 @@
-import geocoder
-
+#import geocoder
 # Recuperer les coordonées d'un device Raspberry Pi
 
-location = geocoder.ip('me')
-print(location.latlng)
-print(location.address)
-
+#location = geocoder.ip('me')
+#print(location.latlng)
+#print(location.address)

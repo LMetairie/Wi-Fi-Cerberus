@@ -13,6 +13,10 @@ Nous allons utiliser les packages:
 - "django rest framework" pour la creation de l'API.
 - "psycopg2, sqlparse" pour communiquer avec la base de données PostgreSQL.
 - "django-cors-headers" pour authoriser l'utilisation de cors.
+- "gdal" necessaire pour sauver les coordonées geographiques dans Django. Error whil building (replaced by FloatField)
+
+### Etat actuel
+Mise en place de controleurs REST capables d'envoyer la liste entiere de addresses sauvegardées mais aussi ajouter/modifier des données.
 
 ## React WebApp
 Nous allons utiliser les packages:
@@ -24,5 +28,6 @@ Nous allons utiliser les packages:
 Script bash pour activer la conexion Wi-Fi et connecter le device au reseau Fablab.
 
 ## Scanner Wi-Fi
-Script python qui sera integré plus tard dans le serveur Django.
-Le script collecte les données, les serialise et les envoye ensuite sur le serveur distant (thingSpeak pour le moment).	
+Script Python qui sera integré en tant que daemon dans les Raspberry Pi.
+Le script collecte les données, les serialise et les envoye ensuite sur le serveur distant (thingSpeak pour le moment).
+

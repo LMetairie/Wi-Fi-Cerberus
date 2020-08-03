@@ -6,4 +6,4 @@ from rest_framework import serializers
 class DetectedDevicesSerializer(serializers.ModelSerializer):
     class Meta:
         model = DetectedDevices
-        fields = ['id', 'date', 'mac_address', 'signal_strength']
+        fields = ['id', 'date', 'mac_address', 'signal_strength', 'lat', 'lon']
