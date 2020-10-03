@@ -1,1 +1,7 @@
 scanner_wifi/venv
+web_application/backend/venv/*
+web_application/backend/cerberus_backend/cerberus_backend/__pycache__
+web_application/backend/cerberus_backend/cerberus_backend/__pycache__
+scanner_wifi/venv
+web_application/backend/cerberus_backend/cerberus_api/__pycache__
+
